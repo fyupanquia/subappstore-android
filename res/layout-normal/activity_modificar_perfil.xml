@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sise.subappstore.ModificarPerfil" >
+
+    <EditText
+        android:id="@+id/etModificarPerfilNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/etModificarPerfilApellido"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etModificarPerfilNombre"
+        android:layout_below="@+id/etModificarPerfilNombre"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Apellido" />
+
+    <EditText
+        android:id="@+id/etModificalEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etModificarPerfilApellido"
+        android:layout_below="@+id/etModificarPerfilApellido"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/etModificalPerfilDireccion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etModificalEmail"
+        android:layout_below="@+id/etModificalEmail"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Dirección" />
+
+    <EditText
+        android:id="@+id/etModificarPerfilTelefono"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etModificalPerfilDireccion"
+        android:layout_below="@+id/etModificalPerfilDireccion"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Teléfono" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etModificarPerfilNombre"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:text="Datos del Usuario :"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnModificarPerfilSalvar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Guardar" />
+
+    <EditText
+        android:id="@+id/etMOdificarPerfilPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etModificarPerfilTelefono"
+        android:layout_below="@+id/etModificarPerfilTelefono"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Clave"
+        android:inputType="textPassword" />
+
+</RelativeLayout>

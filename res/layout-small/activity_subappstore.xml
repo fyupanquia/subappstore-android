@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.sise.subappstore.Subappstore" >
+
+    <ListView
+        android:id="@+id/lvconectados"
+        android:layout_width="220dp"
+        android:layout_height="400dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvTRestante"
+        android:layout_marginRight="10dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/img_perfil_user"
+        android:layout_marginRight="30dp"
+        android:text="Mis monedas"
+        android:textColor="#4901FF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvMejorOferta"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvTRestante"
+        android:layout_alignTop="@+id/ivSigMoneda"
+        android:text="7000"
+        android:textColor="#FF0000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/tvMejorOferta"
+        android:layout_alignLeft="@+id/tvTRestante"
+        android:layout_toLeftOf="@+id/tvMejorOferta"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="Mejor apuesta :"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvUserGanador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNombreProducto"
+        android:layout_centerHorizontal="true"
+        android:text="Usuario ganador"
+        android:textColor="#4901FF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvTRestante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvUserGanador"
+        android:layout_below="@+id/textView8"
+        android:text="99:99:99"
+        android:textColor="#FF0000"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/ivSigMoneda"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvUserGanador"
+        android:layout_toRightOf="@+id/tvMejorOferta"
+        android:src="@drawable/monedita_dorada" />
+
+    <TextView
+        android:id="@+id/etNombreRegistroUser_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPropietario"
+        android:layout_alignParentTop="true"
+        android:text="Propietario:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="50dp"
+        android:text="Tiempo restante"
+        android:textColor="#4901FF"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btnOfrecer"
+        android:layout_toLeftOf="@+id/ivSigMoneda"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingBottom="0dp"
+        android:paddingLeft="25dp"
+        android:text="38000"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/btnOfrecer"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_below="@+id/ivSigMoneda"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="Ofrecer"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/img_perfil_user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/etTitulo"
+        android:layout_alignLeft="@+id/lvconectados"
+        android:src="@drawable/monedita_dorada" />
+
+    <ImageView
+        android:id="@+id/ivImagenProducto"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignLeft="@+id/tvNombreProducto"
+        android:layout_below="@+id/tvTRestante" />
+
+    <TextView
+        android:id="@+id/tvPropietario"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTRestante"
+        android:layout_alignBottom="@+id/tvTRestante"
+        android:layout_alignLeft="@+id/btnSalir"
+        android:text="Master"
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvNombreProducto"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSalir"
+        android:layout_below="@+id/ivImagenProducto"
+        android:text="Nombre del Producto"
+        android:textColor="#4901FF"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvNewCantMonedasS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOfrecer"
+        android:layout_toRightOf="@+id/img_perfil_user"
+        android:text="80"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/etTitulo"
+        android:layout_marginLeft="31dp"
+        android:text="&lt;&lt; SALIR DE SALA"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvEtiquetas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lvconectados"
+        android:layout_alignLeft="@+id/tvNewCantMonedasS"
+        android:text="Conectados"
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+
+</RelativeLayout>

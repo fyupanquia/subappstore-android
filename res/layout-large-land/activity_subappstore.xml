@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.sise.subappstore.Subappstore" >
+
+    <ImageView
+        android:id="@+id/ivMonedaSubasta1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/tvUserGanador"
+        android:layout_alignTop="@+id/tvMejorOferta"
+        android:src="@drawable/abc_ab_share_pack_holo_dark" />
+
+    <Button
+        android:id="@+id/btnOfrecer"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="Ofrecer"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ivImagenProducto"
+        android:layout_alignTop="@+id/btnOfrecer"
+        android:text="SALIR DE SALA"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etNewOferta"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/btnOfrecer"
+        android:layout_centerHorizontal="true"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="00"
+        android:inputType="number"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/etNombreRegistroUser_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Propietario:"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEtiquetas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lvconectados"
+        android:layout_alignParentTop="true"
+        android:text="CONECTADOS"
+        android:textColor="#FF0000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvNewCantMonedasS"
+        android:layout_below="@+id/ivMonedaSubasta"
+        android:text="Mis monedas"
+        android:textColor="#4901FF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNewCantMonedasS"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_toLeftOf="@+id/ivSigMoneda"
+        android:text="..."
+        android:textSize="23sp" />
+
+    <ImageView
+        android:id="@+id/ivSigMoneda"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvNewCantMonedasS"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:src="@drawable/monedita_dorada" />
+
+    <TextView
+        android:id="@+id/tvUserGanador"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/tvTRestante"
+        android:layout_marginTop="66dp"
+        android:text="..."
+        android:textColor="#4901FF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/tvUserGanador"
+        android:layout_alignLeft="@+id/tvTRestante"
+        android:layout_marginBottom="26dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="MEJOR APUESTA:"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMejorOferta"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUserGanador"
+        android:layout_below="@+id/tvUserGanador"
+        android:text="..."
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/ivMonedaSubasta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnOfrecer"
+        android:layout_alignLeft="@+id/ivMonedaSubasta1"
+        android:src="@drawable/abc_ab_share_pack_holo_dark" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView5"
+        android:paddingLeft="50dp"
+        android:text="TIEMPO RESTANTE"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPropietario"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etNombreRegistroUser_"
+        android:text="......"
+        android:textColor="#FF0000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvTRestante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNewOferta"
+        android:layout_below="@+id/textView8"
+        android:text="00:00:00"
+        android:textColor="#FF0000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvNombreProducto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivImagenProducto"
+        android:text="......"
+        android:textColor="#4901FF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivImagenProducto"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tvTRestante" />
+
+    <ListView
+        android:id="@+id/lvconectados"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_alignRight="@+id/ivSigMoneda"
+        android:layout_alignTop="@+id/tvPropietario"
+        android:minHeight="300dp"
+        android:minWidth=" 300dp"
+        android:textAlignment="center" >
+
+    </ListView>
+
+</RelativeLayout>

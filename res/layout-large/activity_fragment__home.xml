@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2" >
+
+    <ListView
+        android:id="@+id/lvProductsxsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_perfil_user"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/img_perfil_user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/lvProductsxsub"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp" />
+
+    <TextView
+        android:id="@+id/tvuserhome"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@+id/img_perfil_user"
+        android:layout_alignLeft="@+id/lvProductsxsub"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvMsgBienvenida"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/tvuserhome"
+        android:layout_alignLeft="@+id/tvuserhome"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="Bienvenido :"
+        android:textColor="#000"
+        android:textSize="35sp" />
+
+</RelativeLayout>

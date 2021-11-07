@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sise.subappstore.RegistrarSubasta" >
+
+    <TextView
+        android:id="@+id/etNombreRegistroUser_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="REGISTRAR NUEVA SUBASTA"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNombreRegistroUser_"
+        android:layout_below="@+id/etNombreRegistroUser_"
+        android:background="#80000000"
+        android:ems="10"
+        android:hint="Título"
+        android:textColor="#ffffff"
+        android:textColorHint="#000000"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnRegistrarSubasta"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/etTitulo"
+        android:layout_alignParentBottom="true"
+        android:text="Subastar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/btnRegistrarSubasta"
+        android:layout_alignRight="@+id/ibCamaraRegistrarSubasta"
+        android:text="Valorización en monedas de oro :"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:id="@+id/ibCamaraRegistrarSubasta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/ivImagenP"
+        android:layout_alignLeft="@+id/ibGaleriaRegistrarSubasta"
+        android:background="#80000000"
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:id="@+id/ivImagenP"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etNombreRegistroUser_"
+        android:layout_marginRight="20dp"
+        android:background="#80000000"
+        android:maxHeight="130dp"
+        android:maxWidth="130dp"
+        android:src="@drawable/box_icon" />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ibGaleriaRegistrarSubasta"
+        android:background="#80000000"
+        android:ems="10"
+        android:hint="Descripción"
+        android:textColor="#ffffff"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/ibGaleriaRegistrarSubasta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/etDescripcion"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/etTitulo"
+        android:background="#80000000"
+        android:src="@drawable/gallery" />
+
+    <Spinner
+        android:id="@+id/spCategoriasRegisterSubasta"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnRegistrarSubasta"
+        android:layout_alignLeft="@+id/ibCamaraRegistrarSubasta" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/ivImagenP"
+        android:background="#80000000"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="number"
+        android:paddingBottom="0dp"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/ivMonedaSubasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spCategoriasRegisterSubasta"
+        android:layout_alignTop="@+id/etPrecio"
+        android:src="@drawable/monedita_dorada" />
+
+</RelativeLayout>

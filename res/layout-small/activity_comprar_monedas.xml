@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sise.subappstore.ComprarMonedas" >
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#80000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/monedita_plateada" />
+
+    <Button
+        android:id="@+id/btnComprarCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:text="Comprar" />
+
+    <EditText
+        android:id="@+id/etNumTarCompra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnComprarCompra"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="# Tarjeta de Débito"
+        android:inputType="numberPassword"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etClaveTarjCompra"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etNumTarCompra"
+        android:layout_below="@+id/etNumTarCompra"
+        android:ems="10"
+        android:hint="# Clave"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/etCompraMonedasDCompra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etNumTarCompra"
+        android:layout_alignLeft="@+id/etNumTarCompra"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/etCompraMonedasDCompra"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_marginBottom="17dp"
+        android:background="#80000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/monedita_dorada" />
+
+    <EditText
+        android:id="@+id/etCantMonedasPCompra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="number" />
+
+</RelativeLayout>

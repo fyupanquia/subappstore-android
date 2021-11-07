@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SubAppStore</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">SubAppStore</string>
+    <string name="title_activity_registro">SubAppStore</string>
+    
+     
+    <string name="urlGetUsuario">http://subappstore.zz.mu/public/lib/slimrest/loginusuario</string>
+    <string name="urlAutenticar">http://subappstore.zz.mu/public/funtions/login</string>
+    <string name="urlVerificar">http://subappstore.zz.mu/public/funtions/verificar</string>
+    <string name="urlPostRegistrarUsuario">http://subappstore.zz.mu/public/lib/slimrest/registrousuario.php</string>
+    <string name="urlPostUpdateUsuario">http://subappstore.zz.mu/public/lib/slimrest/updateusuario.php</string>
+    <string name="urlPostRegistrarSubasta">http://subappstore.zz.mu/public/lib/slimrest/registroproducto.php</string>
+    <string name="urllistarProductos">http://subappstore.zz.mu/public/lib/slimrest/listarproductos.php</string>
+    <string name="urllistarCategorias">http://subappstore.zz.mu/public/lib/slimrest/listarcategorias.php</string>
+    <string name="urlComprar">http://subappstore.zz.mu/public/lib/slimrest/Comprar.php</string>
+    <string name="urlSubasta">http://subappstore.zz.mu/public/lib/slimrest/Subasta.php</string>
+    <string name="urlImagen">http://subappstore.zz.mu/public/lib/slimrest/uploads/perfiles/</string>
+    <string name="urlImagenProducto">http://subappstore.zz.mu/public/lib/slimrest/uploads/perfiles/</string>
+    <string name="urlImagenUsuario">http://subappstore.zz.mu/public/lib/slimrest/uploads/perfiles/</string>
+    <string name="urlSuscribirse">http://subappstore.zz.mu/public/lib/slimrest/insertarusuario</string>
+    <string name="urlgetInfoAcercade">http://subappstore.zz.mu/public/lib/slimrest/acercade.php</string>
+	
+
+
+    <!-- Nombre de los items -->
+    <string-array name="nav_drawer_items">
+        <item>Inicio</item>
+        <item>Mis Subastas</item>
+        <item>Subastas Ganadas</item>
+        <item>Nueva Subasta</item>
+        <item>Ubícanos</item>
+        <item>Comprar Monedas</item>
+        <item>Editar Perfil</item>
+        <item>Acerca de</item>
+        <item>Cerrar Sesión</item>
+    </string-array>
+
+    <!-- Referencia a los iconos -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_mis_susbastas</item>
+        <item>@drawable/ic_misubga</item>
+        <item>@drawable/ic_subastar</item>
+        <item>@drawable/ic_maps</item>
+        <item>@drawable/ic_win</item>
+        <item>@drawable/menu_updateperfil</item>
+        <item>@drawable/ic_acerca</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+
+    <string name="title_activity_menu">SubAppStore</string>
+    <string name="title_activity_drawer_list_item">SubAppStore</string>
+    <string name="title_activity_fragment__home">SubAppStore</string>
+    <string name="title_activity_fragment_2d">SubAppStore</string>
+    <string name="title_activity_fragment_noodle">SubAppStore</string>
+    <string name="title_activity_fragment_murdoc">SubAppStore</string>
+    <string name="title_activity_fragment_russel">SubAppStore</string>
+    <string name="title_activity_gps">SubAppStore</string>
+    <string name="title_activity_item_list_view">SubAppStore</string>
+    <string name="title_activity_subappstore">SubAppStore</string>
+    <string name="title_activity_item_list_conectado">SubAppStore</string>
+    <string name="title_activity_mis_subastas">SubAppStore</string>
+    <string name="title_activity_fragmetn_mis_subastas">SubAppStore</string>
+    <string name="title_activity_registar_subasta">SubAppStore</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="icono">Descripcion del Icono</string>
+    <string name="title_activity_perfil_subasta">PerfilSubasta</string>
+    <string name="title_activity_item_list_image">ItemListImage</string>
+    <string name="title_activity_comprar_monedas">ComprarMonedas</string>
+    <string name="title_activity_modificar_perfil">ModificarPerfil</string>
+
+</resources>

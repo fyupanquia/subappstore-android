@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2" >
+    
+<ScrollView
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="411dp" >
+
+    <ImageButton
+        android:id="@+id/btnEncuentranos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPropietario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/google_maps" />
+
+    <TextView
+        android:id="@+id/tvLabelNombreRegistroUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEtiquetas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Telefono: +51 947545270"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEtiquetas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMsgBienvenida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Av Petit Thouars 5356 - Miraflores"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPropietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="UBICANOS"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMsgBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEncuentranos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Estamos ubicados en: \n C.C. Compu Palace"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

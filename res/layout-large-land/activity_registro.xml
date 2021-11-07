@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.sise.subappstore.RegistroActivity" >
+
+    <requestFocus />
+
+    <EditText
+        android:id="@+id/etNombreRegistroUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/etNombreRegistroUser_"
+        android:background="#c4f4cf"
+        android:ems="10"
+        android:hint="Ingrese Nombres"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/etNombreRegistroUser_"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etNombreRegistroUser"
+        android:layout_alignBottom="@+id/etNombreRegistroUser"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="15dp"
+        android:text="Nombres :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvTelefonoRegistroUser"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etTelefonoRegistroUser"
+        android:layout_alignBottom="@+id/etTelefonoRegistroUser"
+        android:layout_toLeftOf="@+id/etNombreRegistroUser"
+        android:paddingLeft="15dp"
+        android:text="Teléfono :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/etApellidoRegistroUser_"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNombreRegistroUser_"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/etNombreRegistroUser"
+        android:paddingLeft="15dp"
+        android:text="Apellidos :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etApellidoRegistroUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etApellidoRegistroUser_"
+        android:layout_alignBottom="@+id/etApellidoRegistroUser_"
+        android:layout_alignLeft="@+id/etNombreRegistroUser"
+        android:background="#c4f4cf"
+        android:ems="10"
+        android:hint="Ingrese Apellidos"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgSubir"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/etNombreRegistroUser"
+        android:layout_marginLeft="56dp"
+        android:layout_toRightOf="@+id/etNombreRegistroUser"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/imgSubir"
+        android:layout_below="@+id/imgSubir"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera" />
+
+    <ImageButton
+        android:id="@+id/btnElegirGaleria"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/imgSubir"
+        android:layout_alignTop="@+id/btnTomarFoto"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/gallery" />
+
+    <EditText
+        android:id="@+id/etClaveRegistroUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsuarioRegistroUser"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/imgSubir"
+        android:background="#c4f4cf"
+        android:ems="10"
+        android:hint="Ingrese su Clave"
+        android:inputType="textPassword"
+        android:password="true"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvUsuarioRegistroUsuario"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmailRegistroUser_"
+        android:layout_below="@+id/etEmailRegistroUser_"
+        android:layout_marginTop="21dp"
+        android:paddingLeft="15dp"
+        android:text="Usuario :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNewCantMonedasS"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUsuarioRegistroUsuario"
+        android:layout_alignTop="@+id/btnAceptar"
+        android:paddingLeft="15dp"
+        android:text="Clave :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUsuarioRegistroUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvUsuarioRegistroUsuario"
+        android:layout_alignBottom="@+id/tvUsuarioRegistroUsuario"
+        android:layout_alignLeft="@+id/etEmailRegistroUser"
+        android:background="#c4f4cf"
+        android:ems="10"
+        android:hint="Ingrese su Usuario"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/etEmailRegistroUser_"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etEmailRegistroUser"
+        android:layout_alignBottom="@+id/etEmailRegistroUser"
+        android:layout_toLeftOf="@+id/etNombreRegistroUser"
+        android:paddingLeft="15dp"
+        android:text="Email :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        style="@android:style/Theme.Translucent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etClaveRegistroUser"
+        android:layout_toLeftOf="@+id/btnElegirGaleria"
+        android:background="#c4f4cf"
+        android:text="ACEPTAR"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMsgBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etUsuarioRegistroUser"
+        android:layout_alignRight="@+id/btnTomarFoto"
+        android:text="Tomar \n Foto"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvMsgBienvenida"
+        android:layout_alignBottom="@+id/tvMsgBienvenida"
+        android:layout_toRightOf="@+id/btnAceptar"
+        android:text="Elegir \n Galeria"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/etDireccionRegistroUser_"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etDireccionRegistroUser"
+        android:layout_alignBottom="@+id/etDireccionRegistroUser"
+        android:layout_toLeftOf="@+id/etNombreRegistroUser"
+        android:paddingLeft="15dp"
+        android:text="Dirección :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etDireccionRegistroUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etApellidoRegistroUser"
+        android:layout_below="@+id/etApellidoRegistroUser"
+        android:layout_marginTop="28dp"
+        android:background="#c4f4cf"
+        android:ems="10"
+        android:hint="Ingrese Direccion"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etTelefonoRegistroUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgSubir"
+        android:layout_toLeftOf="@+id/imgSubir"
+        android:background="#c4f4cf"
+        android:ems="10"
+        android:hint="Ingrese Telefono"
+        android:inputType="phone"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etEmailRegistroUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnTomarFoto"
+        android:layout_alignLeft="@+id/etTelefonoRegistroUser"
+        android:background="#c4f4cf"
+        android:ems="10"
+        android:hint="Ingrese E-Mail"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp" />
+
+</RelativeLayout>
